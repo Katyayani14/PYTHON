@@ -1,0 +1,27 @@
+class student_details:
+    def __init__(self):
+        self.name="katyayani"
+        self.reg_no=12212555
+        self.marks=80
+    def disp(self):
+        print(self.name,self.reg_no,self.marks)
+class examination(student_details):
+    coursecode=108
+    seatingplan="26-403"
+    def e1(self):
+        print(self.reg_no,self.coursecode,self.seatingplan)
+class library(student_details):
+    issue_a_book="novel"
+    def e2(self):
+        print(self.reg_no,self.issue_a_book)
+class research(student_details):
+    research_paper="english"
+    research_value=45
+    def e3(self):
+        print(self.name,self.reg_no,self.research_paper,self.research_value)
+o1=examination()
+o1.e1()
+o2=library()
+o2.e2()
+o3=research()
+o3.e3()
